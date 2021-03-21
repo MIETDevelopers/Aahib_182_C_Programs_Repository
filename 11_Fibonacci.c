@@ -8,7 +8,7 @@ int main(){
  
    printf("First %d terms of Fibonacci series are :-\n",n);
  
-   for ( c = 0 ; c < n ; c++ ) //Referance to formulas of the series.
+   for ( c = 0 ; c < n ; c++ )//Referance to formulas of the series.
    {
       if ( c <= 1 )
          next = c;
@@ -19,7 +19,7 @@ int main(){
          first = second;
          second = next;
       }
-      printf("%d\n",next); //provides the output.
+      printf("%d\n",next);//provides the output.
    }
    return 0;
 }
