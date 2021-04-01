@@ -1,0 +1,22 @@
+struct MyObj{
+    double x, y;
+};
+
+struct MyObj foo(){
+    struct MyObj a;
+    
+    a.x = 10;
+    a.y = 10;
+    
+    return a;
+}        
+
+int main () {
+
+    struct MyObj a;
+    
+    a = foo();    // This DOES work
+    struct b = a; // This does not work
+      
+    return 0;
+}    
