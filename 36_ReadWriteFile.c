@@ -7,7 +7,7 @@ struct s {
 	struct s a[1000],b[1000];
 	FILE *fptr;
 	int i;
-	fptr=fopen("E:\\Softwares\\C_Programs\\Ishav_160_C_Programs_Repository\\030_ReadWriteFile.txt","wb");
+	fptr=fopen("E:\\Softwares\\C_Programs\\Aahib_182_C_Programs_Repository\\030_ReadWriteFile.txt","wb");
 	for (i=0;i<1;++i) {
 		fflush(stdin);
 		printf("Enter Text: ");
@@ -15,7 +15,7 @@ struct s {
 	}
 	fwrite(a,sizeof(a),1,fptr);
 	fclose(fptr);
-	fptr=fopen("E:\\Softwares\\C_Programs\\Ishav_160_C_Programs_Repository\\030_ReadWriteFile.txt","rb");
+	fptr=fopen("E:\\Softwares\\C_Programs\\Aahib_182_C_Programs_Repository\\030_ReadWriteFile.txt","rb");
 	fread(b,sizeof(b),1,fptr);
 	printf("\n Entered details are:\n");
 	for (i=0;i<1;++i) {
